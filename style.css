@@ -59,6 +59,8 @@ body {
 
 
 .div1 {
+    
+    overflow-y: auto; 
     background-color: transparent;
     border-radius: 7px;
     border: 2px solid transparent;

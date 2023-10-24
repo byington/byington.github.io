@@ -212,10 +212,10 @@ body {
 
 @media (max-width: 520px){
     #voltar {
-        width: 100px;
+        width:200px;
         height: 40px;
-        left: 300px;
-        top: 800px;
+        left: 40px;
+        top: 840px;
     }
 }
 
@@ -296,9 +296,9 @@ body {
 /* Estilos para dispositivos móveis (landscape e portrait) */
 @media (max-width: 480px) {
     #avancar {
-        width: 100px;
+        width: 200px;
         height: 40px;
-        left: 20px;
+        left: 40px;
         top: 761px;
     }
 

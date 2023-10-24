@@ -1,0 +1,262 @@
+body {
+    background-image: url("div1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* Desloca 10 pixels para baixo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Defina a animação de saída */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
+  @keyframes andar {
+    from {
+        transform: translateX(-40%); /* Começa fora da tela à esquerda */
+    }
+    to {
+        transform: translateX(40%); /* Termina fora da tela à direita */
+    }
+}
+  
+
+
+.div1 {
+    background-color: transparent;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    position: fixed;
+    top: 140px;
+    left: 400px;
+    height: 500px;
+    width: 760px;
+    padding: 9px 9px 9px 9px;
+    border-color: transparent;
+    transition: transform 0.2s ease;
+    animation: fadeIn 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+
+}
+
+.div1:hover {
+    border: 2px solid rgb(0, 208, 255);
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#voltar {
+    position: absolute;
+    top: 460px;
+    left: 20px;
+    height: 39px;
+    width: 190px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease;
+    display: flex; /* Usar flexbox para alinhar conteúdo */
+    align-items: center; /* Alinhar verticalmente no centro */
+    justify-content: center; /* Alinhar horizontalmente no centro */
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #3498db;
+    animation: fadeIn 0.5s;
+
+}
+
+#voltar img {
+  
+    width: 30px; /* Largura desejada em pixels */
+    height: 30px; /* Altura desejada em pixels */
+    align-items: left;
+      
+}
+
+#avancar {
+    position: absolute;
+    top: 460px;
+    left: 565px;
+    height: 39px;
+    width: 190px;
+    border-radius: 10px;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    transition: transform 0.3s ease;
+    display: flex; /* Usar flexbox para alinhar conteúdo */
+    align-items: center; /* Alinhar verticalmente no centro */
+    justify-content: center; /* Alinhar horizontalmente no centro */
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.5s;
+
+    
+
+
+}
+
+#avancar img {
+    width: 30px; /* Largura desejada em pixels */
+    height: 30px; /* Altura desejada em pixels */
+    align-items: left;
+    
+}
+
+
+
+#voltar:hover {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    border: 2px solid rgb(20, 210, 231);
+    box-shadow: 5px 5px 10px 10px rgb(71, 194, 255);
+    
+}
+
+#avancar:hover {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    border: 2px solid  rgba(15, 223, 4, 0.5);
+    box-shadow: 5px 5px 10px 10px rgba(15, 223, 4, 0.5);
+    
+}
+
+
+#titulo {
+    position: absolute;
+    color: black;
+    animation: fadeIn 0.5s;
+    width: 518px;
+    animation: fadeIn ease;
+    left: 10px;
+    transition: transform 0.3s ease;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    color: black;
+    background-size: 200% 100%; /* Inicialmente, definimos a largura do gradiente para 200% */
+    transition: background-position 0.5s;
+
+
+    
+}   
+
+#titulo:hover {
+    background-image: linear-gradient(to right, #1120bc 0%, #04d915 33%, #1013cd 33%, #12d900 66%, #09c118 66%, #0082d9 100%);
+    color: rgb(187, 0, 255);
+
+    text-decoration:wavy;
+    transform: scale(1.02);
+    background-position: 100% 0;
+}
+
+.texto-back {
+    background-color: orange;
+    background-image: url("back-body.jpg");
+
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+}
+
+.div1:hover {
+    transform: scale(1.02);
+
+    
+}
+
+#textos {
+    position: absolute;
+    top: 120px;
+    animation: fadeIn 0.5s ease;
+    transition: transform 0.3s ease;
+}
+
+#textos:hover {
+    transform: scale(1.02);
+}
+
+#textos.fade-out {
+    animation: fadeOut 0.5s ease;
+    display: none; /* Oculta o elemento após a animação de saída */
+}
+
+#titulos {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    animation: andar 30s linear infinite;
+
+}
+
+#link-enio {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: right;
+    right: 50px;
+    top: 30px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.5s;
+
+    font-size: large;
+
+}
+
+#link-enio:hover {
+    color: rgb(255, 0, 204);
+    transform: skew(10deg, 20deg);
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 166);
+}
+
+#link-fonte {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: right;
+    right: 110px;
+    top: 30px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.5s;
+    font-size: large;
+}
+
+#link-fonte:hover {
+    color: rgb(255, 0, 166);
+    transform: skew(10deg, 20deg);
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 166);
+}
+
+#copy {
+    position: absolute;
+    top: 670px;
+    padding: 7px;
+}

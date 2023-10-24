@@ -57,24 +57,34 @@ body {
 
 
 .div1 {
-    overflow-y: auto; 
+    overflow-y: scroll; 
     max-height: 100vh;
     background-color: transparent;
-    border-radius: 7px;
-    border: 2px solid transparent;
-    position: absolute;
-    top: 140px;
+  
+    position: fixed;
+    top: 40px;
     left: 400px;
     height: 500px;
     width: 760px;
     padding: 9px 9px 9px 9px;
-    border-color: transparent;
     transition: transform 0.2s ease;
     animation: fadeIn 0.5s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
 
+}
+
+
+@media screen and (max-width: 768px) {
+    section, aside {
+        width: 100%;
+    }
+    
+    .div1 {
+        width: 100%; /* Faça com que a div1 ocupe 100% da largura da tela */
+        left: 0; /* Posição da div1 a partir da esquerda */
+        top: 100px; /* Ajuste conforme necessário */
+    }
 }
 
 @media (max-width: 1024px) {
@@ -132,15 +142,15 @@ body {
 
 
 .div1:hover {
-    border: 2px solid rgb(0, 208, 255);
+    border: 2px solid rgb(0, 47, 255);
     transform: scale(1.01);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
 }
 
 #voltar {
     position:relative;
-    top: 460px;
-    left: 20px;
+    top: 590px;
+    left: 360px;
     height: 39px;
     width: 190px;
     border-radius: 10px;
@@ -197,23 +207,23 @@ body {
         width: 200px;
         height: 40px;
         left: 20px;
-        top: 460px;
+        top: 700px;
     }
 
 }
 
 #voltar img {
   
-    width: 30px; /* Largura desejada em pixels */
-    height: 30px; /* Altura desejada em pixels */
+    width: 50px; /* Largura desejada em pixels */
+    height: 40px; /* Altura desejada em pixels */
     align-items: left;
       
 }
 
 #avancar {
     position: relative;
-    top: 460px;
-    left: 360px;
+    top: 550px;
+    left: 1010px;
     height: 39px;
     width: 190px;
     border-radius: 10px;
@@ -273,14 +283,14 @@ body {
         width: 200px;
         height: 40px;
         left: 20px;
-        top: 460px;
+        top: 790px;
     }
 
 }
 
 #avancar img {
-    width: 30px; /* Largura desejada em pixels */
-    height: 30px; /* Altura desejada em pixels */
+    width: 50px; /* Largura desejada em pixels */
+    height: 40px; /* Altura desejada em pixels */
     align-items: left;
     
 }

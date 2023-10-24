@@ -58,10 +58,8 @@ body {
 
 .div1 {
     overflow-y: scroll; 
-    max-height: 100vh;
     background-color: transparent;
-  
-    position: fixed;
+    position: absolute;
     top: 40px;
     left: 400px;
     height: 500px;
@@ -173,8 +171,8 @@ body {
     #voltar {
         width: 200px;
         height: 40px;
-        left: 6px;
-        top: 350px;
+        left: 20px;
+        top: 600px;
     }
 }
 
@@ -193,8 +191,8 @@ body {
     #voltar {
         width: 200px;
         height: 40px;
-        top: 460px;
-        left: 59px;
+        top: 630px;
+        left: 80px;
 
 
     }
@@ -210,6 +208,15 @@ body {
         top: 700px;
     }
 
+}
+
+@media (max-width: 520px){
+    #voltar {
+        width: 100px;
+        height: 40px;
+        left: 300px;
+        top: 800px;
+    }
 }
 
 #voltar img {
@@ -249,8 +256,8 @@ body {
     #avancar {
         width: 200px;
         height: 40px;
-        left: 100px;
-        top: 350px;
+        left: 600px;
+        top: 555px;
     }
 }
 
@@ -269,21 +276,30 @@ body {
     #avancar {
         width: 200px;
         height: 40px;
-        top: 460px;
-        left: 170px;
+        top: 590px;
+        left: 500px;
 
 
     }
 
 }
 
-/* Estilos para dispositivos móveis (landscape e portrait) */
-@media (max-width: 480px) {
+@media (max-width: 520px){
     #avancar {
         width: 200px;
         height: 40px;
+        left: 330px;
+        top: 800px;
+    }
+}
+
+/* Estilos para dispositivos móveis (landscape e portrait) */
+@media (max-width: 480px) {
+    #avancar {
+        width: 100px;
+        height: 40px;
         left: 20px;
-        top: 790px;
+        top: 761px;
     }
 
 }

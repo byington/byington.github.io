@@ -19,3 +19,8 @@ nav a:hover {
     border-radius: 8px;
     color: #007bff;
 }
+
+#videoDiv {
+    position: absolute;
+    top: 60%;
+}

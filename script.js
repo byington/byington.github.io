@@ -18,7 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
   ultima_noticia.addEventListener("click", function (event){
     event.preventDefault();
     const h3Noticias = document.getElementById("noticias");
-    h3Noticias.textContent = "Tem prova, vai estudar rapaz";
+  
+    const link = document.createElement("a");
+    link.href = "https://byington.github.io/diverte/video.html"; // Substitua "URL_DO_LINK" pela URL real para onde deseja redirecionar.
+    link.textContent = "Aqui"; // Substitua "Aqui" pelo texto da palavra que você deseja transformar em link.
+
+    // Crie o texto que não será um link
+    const textoNaoLink = document.createTextNode(" Clique");
+    const textcontinue = document.createTextNode("Para ver um aluno (programador) do Byington que conseguiu criar uma simulação do movimento do sistema solar")
+
+    // Limpe o conteúdo anterior do h3Noticias
+    h3Noticias.innerHTML = "";
+
+    h3Noticias.appendChild(textoNaoLink);
+    h3Noticias.appendChild(document.createTextNode(" "));
+    h3Noticias.appendChild(link);
+    h3Noticias.appendChild(document.createTextNode(" "));
+    h3Noticias.appendChild(textcontinue);
   })
 });
 
@@ -30,6 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Verifica se é um dispositivo móvel
   if (isMobileDevice) {
     // Exibe um alerta sugerindo que o usuário altere para o modo de computador
-    alert("recomendamos usar o site no modo de computador e dpois da um zoom - para obter a melhor experiência.");
+    alert("recomendamos usar o site no modo de computador para obter a melhor experiência.");
   }
 });

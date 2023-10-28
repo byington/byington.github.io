@@ -35,5 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Role até o elemento do vídeo
     videoDiv.scrollIntoView({ behavior: "smooth" });
+    alert("Assista o vídeo abaixo.");
   });
 });

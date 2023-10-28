@@ -94,7 +94,7 @@ nav a:hover {
     .textos {
         width: 90%; /* Ajuste a largura para telas menores */
         height: 50%;
-        top: 10%;
+        top: 60%;
     }
 
     header {
@@ -113,7 +113,7 @@ nav a:hover {
     #videoDiv {
         width: 90%;
         height: 50%;
-        top: 70%;
+        top: 10%;
     }
 }
 

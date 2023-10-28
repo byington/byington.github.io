@@ -1,470 +1,81 @@
 body {
-
-    overflow: hidden;
-    max-height: 100vh; /* 100% da altura da tela */
-    max-width: 100vw; /* 100% da largura da tela */
-    overflow-x: auto; /* Barra de rolagem horizontal */
-    overflow-y: auto; /* Barra de rolagem vertical */
-    
+    background-color: white;
+    margin: 0; /* Remova as margens padrão do corpo */
 }
 
-@media screen and (max-width: 768px) {
-    section, aside {
-        width: 100%;
-    }
-    
-    .div1 {
-        width: 100%; /* Faça com que a div1 ocupe 100% da largura da tela */
-        left: 0; /* Posição da div1 a partir da esquerda */
-        top: 100px; /* Ajuste conforme necessário */
-    }
-
-    /* Outras alterações de estilo para telas menores aqui */
-}
-
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px); /* Desloca 10 pixels para baixo */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Defina a animação de saída */
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-  }
-
-  @keyframes andar {
-    from {
-        transform: translateX(-40%); /* Começa fora da tela à esquerda */
-    }
-    to {
-        transform: translateX(40%); /* Termina fora da tela à direita */
-    }
-}
-  
-
-
-.div1 {
-    overflow-y: scroll; 
-    background-color: transparent;
-    position: absolute;
-    top: 40px;
-    left: 400px;
-    height: 500px;
-    width: 760px;
-    padding: 9px 9px 9px 9px;
-    transition: transform 0.2s ease;
-    animation: fadeIn 0.5s;
-    overflow: hidden;
-    display: flex;
-
-}
-
-
-@media screen and (max-width: 768px) {
-    section, aside {
-        width: 100%;
-    }
-    
-    .div1 {
-        width: 100%; /* Faça com que a div1 ocupe 100% da largura da tela */
-        left: 0; /* Posição da div1 a partir da esquerda */
-        top: 100px; /* Ajuste conforme necessário */
-    }
-}
-
-@media (max-width: 1024px) {
-    .div1 {
-        width: 500px;
-        height: 400px;
-        left: 100px;
-        top: 100px;
-    }
-}
-
-/* Estilos para tablets menores, como iPad Mini */
-@media (max-width: 768px) {
-    .div1 {
-        width: 100%;
-        height: 100%;
-        left: 20px;
-        top: 150px;
-    }
-  
-}
-
-@media (max-width: 850px) {
-    .div1 {
-        width: 100%;
-        height: 100%;
-        top: 200px;
-        left: 20px;
-
-    }
-   
-}
-
-/* Estilos para dispositivos móveis (landscape e portrait) */
-@media (max-width: 480px) {
-    .div1 {
-        width: 100%;
-        height: 100%;
-        left: 20px;
-        top: 50px;
-    }
-
-    #titulo {
-        
-        font-size: 1.5rem;
-    }
-
-}
-
-.div1 button {
-    width: 100%; /* Faz com que os botões ocupem 100% da largura da .div1 */
-    height: auto; /* Ajusta a altura automaticamente */
-    margin: 5px 0; /* Adiciona margem entre os botões para espaçamento */
-}
-
-
-.div1:hover {
-    border: 2px solid rgb(0, 47, 255);
-    transform: scale(1.01);
-    border-radius: 7px;
-}
-
-#voltar {
-    position:relative;
-    top: 590px;
-    left: 360px;
-    height: 39px;
-    width: 190px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid transparent;
-    transition: transform 0.3s ease;
-    display: flex; /* Usar flexbox para alinhar conteúdo */
-    align-items: center; /* Alinhar verticalmente no centro */
-    justify-content: center; /* Alinhar horizontalmente no centro */
-    font-family: "Playfair Display", serif;
-    font-size: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #3498db;
-    animation: fadeIn 0.5s;
-
-}
-@media (max-width: 1024px) {
-    #voltar {
-        width: 200px;
-        height: 40px;
-        left: 20px;
-        top: 600px;
-    }
-}
-
-/* Estilos para tablets menores, como iPad Mini */
-@media (max-width: 768px) {
-    #voltar {
-        width: 200px;
-        height: 40px;
-        left: 10px;
-        top: 400px;
-    }
-   
-}
-
-@media (max-width: 850px) {
-    #voltar {
-        width: 200px;
-        height: 40px;
-        top: 630px;
-        left: 80px;
-
-
-    }
-
-}
-
-/* Estilos para dispositivos móveis (landscape e portrait) */
-@media (max-width: 480px) {
-    #voltar {
-        width: 200px;
-        height: 40px;
-        left: 20px;
-        top: 700px;
-    }
-
-}
-
-@media (max-width: 520px){
-    #voltar {
-        width:200px;
-        height: 40px;
-        left: 40px;
-        top: 840px;
-    }
-}
-
-#voltar img {
-  
-    width: 50px; /* Largura desejada em pixels */
-    height: 40px; /* Altura desejada em pixels */
-    align-items: left;
-      
-}
-
-#avancar {
-    position: relative;
-    top: 550px;
-    left: 1010px;
-    height: 39px;
-    width: 190px;
-    border-radius: 10px;
-    background-color: #3498db;
-    border: 2px solid #3498db;
-    transition: transform 0.3s ease;
-    display: flex; /* Usar flexbox para alinhar conteúdo */
-    align-items: center; /* Alinhar verticalmente no centro */
-    justify-content: center; /* Alinhar horizontalmente no centro */
-    font-family: "Playfair Display", serif;
-    font-size: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    animation: fadeIn 0.5s;
-
-    
-
-
-}
-
-@media (max-width: 1024px) {
-    #avancar {
-        width: 200px;
-        height: 40px;
-        left: 600px;
-        top: 555px;
-    }
-}
-
-/* Estilos para tablets menores, como iPad Mini */
-@media (max-width: 768px) {
-    #avancar {
-        width: 200px;
-        height: 40px;
-        left: 20px;
-        top: 400px;
-    }
-   
-}
-
-@media (max-width: 850px) {
-    #avancar {
-        width: 200px;
-        height: 40px;
-        top: 590px;
-        left: 500px;
-
-
-    }
-
-}
-
-@media (max-width: 520px){
-    #avancar {
-        width: 200px;
-        height: 40px;
-        left: 330px;
-        top: 800px;
-    }
-}
-
-/* Estilos para dispositivos móveis (landscape e portrait) */
-@media (max-width: 480px) {
-    #avancar {
-        width: 200px;
-        height: 40px;
-        left: 40px;
-        top: 761px;
-    }
-
-}
-
-#avancar img {
-    width: 50px; /* Largura desejada em pixels */
-    height: 40px; /* Altura desejada em pixels */
-    align-items: left;
-    
-}
-
-
-
-#voltar:hover {
-    background-color: gainsboro;
-    transform: scale(1.05);
-    border: 2px solid rgb(20, 210, 231);
-    box-shadow: 5px 5px 10px 10px rgb(71, 194, 255);
-    
-}
-
-#avancar:hover {
-    background-color: gainsboro;
-    transform: scale(1.05);
-    border: 2px solid  rgba(15, 223, 4, 0.5);
-    box-shadow: 5px 5px 10px 10px rgba(15, 223, 4, 0.5);
-    
-}
-
-
-#titulo {
-    position: absolute;
-    color: black;
-    animation: fadeIn 0.5s;
-    width: 518px;
-    animation: fadeIn ease;
-    left: 10px;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    color: black;
-    background-size: 200% 100%; /* Inicialmente, definimos a largura do gradiente para 200% */
-    transition: background-position 0.5s;
-
-
-    
-}   
-
-#titulo:hover {
-    color: rgb(187, 0, 255);
-
-    text-decoration:wavy;
-    transform: scale(1.02);
-    background-position: 100% 0;
-}
-
-.texto-back {
-    background-color: transparent;
-    position:absolute;
-    top: 0px;
-    left: 0px;
+#cabecalho {
+    background-color: #f27;
     width: 100%;
-
-}
-
-@media (max-width: 1024px) {
-    .texto-back {
-        width: 500px;
-        height: 400px;
-        left: 100px;
-        top: 100px;
-    }
-}
-
-/* Estilos para tablets menores, como iPad Mini */
-@media (max-width: 768px) {
-    .texto-back {
-        width: 400px;
-        height: 300px;
-        left: 50px;
-        top: 50px;
-    }
-}
-
-/* Estilos para dispositivos móveis (landscape e portrait) */
-@media (max-width: 480px) {
-    .texto-back {
-        width: 300px;
-        height: 200px;
-        left: 20px;
-        top: 0px;
-        padding: 1px;
-    }
-}
-
-.div1:hover {
-    transform: scale(1.02);
-
-    
-}
-
-#textos {
-    position: absolute;
-    top: 120px;
-    animation: fadeIn 0.5s ease;
-    transition: transform 0.3s ease;
-}
-
-#textos:hover {
-    transform: scale(1.02);
-}
-
-#textos.fade-out {
-    animation: fadeOut 0.5s ease;
-    display: none; /* Oculta o elemento após a animação de saída */
-}
-
-#titulos {
     position: absolute;
     top: 0;
-    left: 200px;
+    left: 0;
+}
+
+.textos {
+    border: 2px solid rgb(208, 196, 219);
+    border-radius: 6px;
+    max-width: 100%; /* Faça com que o elemento tenha no máximo a largura da tela */
+    width: 80%; /* Defina a largura desejada */
+    height: auto; /* A altura se ajustará automaticamente ao conteúdo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 20px;
+    max-height: 300px; /* Defina a altura máxima que desejar */
+    overflow-y: auto;  /* Adiciona uma barra de rolagem vertical quando necessário */
+    border: 1px solid #ccc; /* Opcional: Estilo da borda */
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 80px; /* Espaço para o cabeçalho */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: rgb(10, 10, 10);
     text-align: center;
-    font-size: 20px;
-    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-    animation: andar 30s linear infinite;
-
-}
-
-#link-enio {
-    color: rgb(0, 0, 0);
-    position: fixed;
-    text-align: right;
-    right: 50px;
-    top: 30px;
+    padding: 14px 16px;
+    text-decoration: none;
     transition: transform 0.3s ease;
-    animation: fadeIn 0.5s;
-
-    font-size: large;
-
 }
 
-#link-enio:hover {
-    color: rgb(255, 0, 204);
-    transform: skew(10deg, 20deg);
-    box-shadow: 5px 5px 5px 5px rgb(255, 0, 166);
+nav a:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
 }
 
-#link-fonte {
-    color: rgb(0, 0, 0);
-    position: fixed;
-    text-align: right;
-    right: 110px;
-    top: 30px;
-    transition: transform 0.3s ease;
-    animation: fadeIn 0.5s;
-    font-size: large;
-}
+/* Mídia query para telas menores, por exemplo, dispositivos móveis */
+@media (max-width: 768px) {
+    .textos {
+        width: 90%; /* Ajuste a largura para telas menores */
+        height: 50%;
+    }
 
-#link-fonte:hover {
-    color: rgb(255, 0, 166);
-    transform: skew(10deg, 20deg);
-    box-shadow: 5px 5px 5px 5px rgb(255, 0, 166);
-}
+    header {
+        top: 100px; /* Aumente o espaço para o cabeçalho em telas menores */
+    }
 
-#copy {
-    position: fixed;
-    top: 670px;
-    padding: 7px;
+    nav ul {
+        float: none; /* Altere o comportamento da lista para empilhar em telas menores */
+        text-align: center;
+    }
+
+    nav li {
+        float: none; /* Garanta que os itens da lista sejam exibidos como blocos em telas menores */
+    }
 }

@@ -70,29 +70,6 @@ nav a:hover {
     border-radius: 6px;
 }
 
-
-/* Mídia query para telas menores, por exemplo, dispositivos móveis */
-@media (max-width: 768px) {
-    .textos {
-        width: 90%; /* Ajuste a largura para telas menores */
-        height: 50%;
-    }
-
-    header {
-        top: 100px; /* Aumente o espaço para o cabeçalho em telas menores */
-    }
-
-    nav ul {
-        float: none; /* Altere o comportamento da lista para empilhar em telas menores */
-        text-align: center;
-    }
-
-    nav li {
-        float: none; /* Garanta que os itens da lista sejam exibidos como blocos em telas menores */
-    }
-}
-
-
 #videoDiv {
     border: 2px solid rgb(208, 196, 219);
     border-radius: 6px;
@@ -109,4 +86,35 @@ nav a:hover {
     overflow-y: auto;  /* Adiciona uma barra de rolagem vertical quando necessário */
     border: 1px solid #ccc; /* Opcional: Estilo da borda */
 }
+
+
+
+/* Mídia query para telas menores, por exemplo, dispositivos móveis */
+@media (max-width: 768px) {
+    .textos {
+        width: 90%; /* Ajuste a largura para telas menores */
+        height: 50%;
+        top: 20%;
+    }
+
+    header {
+        top: 100px; /* Aumente o espaço para o cabeçalho em telas menores */
+    }
+
+    nav ul {
+        float: none; /* Altere o comportamento da lista para empilhar em telas menores */
+        text-align: center;
+    }
+
+    nav li {
+        float: none; /* Garanta que os itens da lista sejam exibidos como blocos em telas menores */
+    }
+
+    #videoDiv {
+        width: 90%;
+        height: 50%;
+        top: 70%;
+    }
+}
+
 

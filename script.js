@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Verifica se é um dispositivo móvel
   if (isMobileDevice) {
     // Exibe um alerta sugerindo que o usuário altere para o modo de computador
-    alert("recomendamos usar o site no modo de computador para obter a melhor experiência.");
+    alert("recomendamos usar o site no modo de computador e dpois da um zoom - para obter a melhor experiência.");
   }
 });

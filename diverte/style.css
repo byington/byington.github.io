@@ -1,0 +1,21 @@
+nav li {
+    float: left;
+    padding: 10px 10px 10px;
+}
+
+nav a {
+    display: block;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    padding: 10px 10px 10px 10px;
+}
+
+nav a:hover {
+    background-color: rgb(243, 243, 243);
+    transform: scale(1.03);
+    border-radius: 8px;
+    color: #007bff;
+}

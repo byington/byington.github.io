@@ -50,6 +50,7 @@ nav ul {
 
 nav li {
     float: left;
+    padding: 10px 10px 10px;
 }
 
 nav a {
@@ -59,12 +60,16 @@ nav a {
     padding: 14px 16px;
     text-decoration: none;
     transition: transform 0.3s ease;
+    padding: 10px 10px 10px 10px;
 }
 
 nav a:hover {
     background-color: #e0e0e0;
     transform: scale(1.02);
+    color: #007bff;
+    border-radius: 6px;
 }
+
 
 /* Mídia query para telas menores, por exemplo, dispositivos móveis */
 @media (max-width: 768px) {
@@ -85,4 +90,22 @@ nav a:hover {
     nav li {
         float: none; /* Garanta que os itens da lista sejam exibidos como blocos em telas menores */
     }
+}
+
+
+#videoDiv {
+    border: 2px solid rgb(208, 196, 219);
+    border-radius: 6px;
+    max-width: 100%; /* Faça com que o elemento tenha no máximo a largura da tela */
+    width: 80%; /* Defina a largura desejada */
+    height: auto; /* A altura se ajustará automaticamente ao conteúdo */
+    position: absolute;
+    top: 1300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 20px;
+    max-height: 300px; /* Defina a altura máxima que desejar */
+    overflow-y: auto;  /* Adiciona uma barra de rolagem vertical quando necessário */
+    border: 1px solid #ccc; /* Opcional: Estilo da borda */
 }

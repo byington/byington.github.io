@@ -21,3 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
     h3Noticias.textContent = "Tem prova, vai estudar rapaz";
   })
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Selecione o elemento "Se diverte" pelo id
+  const seDiverte = document.getElementById("se_diverte");
+
+  // Selecione o elemento do vídeo
+  const videoDiv = document.getElementById("videoDiv");
+
+  // Adicione um evento de clique ao elemento "Se diverte"
+  seDiverte.addEventListener("click", function (event) {
+    event.preventDefault(); // Evita que o link redirecione para outra página
+
+    // Role até o elemento do vídeo
+    videoDiv.scrollIntoView({ behavior: "smooth" });
+  });
+});

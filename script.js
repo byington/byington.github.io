@@ -21,3 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
     h3Noticias.textContent = "Tem prova, vai estudar rapaz";
   })
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Detecta o tipo de dispositivo (celular, tablet, etc.)
+  const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  // Verifica se é um dispositivo móvel
+  if (isMobileDevice) {
+    // Exibe um alerta sugerindo que o usuário altere para o modo de computador
+    alert("recomendamos usar o site no modo de computador para obter a melhor experiência.");
+  }
+});

@@ -4,11 +4,18 @@ body {
 }
 
 #cabecalho {
-    background-color: #f27;
+    background-color: transparent;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+#cabecalho:hover {
+    transform: scale(1.001);
+    color: cadetblue;
 }
 
 .textos {

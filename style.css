@@ -5,6 +5,11 @@ body {
     background-size: cover;
 }
 
+#noticias {
+    padding: 25px;
+}
+
+
 #cabecalho {
     background-color: transparent;
     width: 100%;
